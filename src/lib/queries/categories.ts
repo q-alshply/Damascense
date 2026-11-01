@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { createClient } from "@/lib/supabase/server";
+import { createPublicClient } from "@/lib/supabase/public";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { FALLBACK_CATEGORIES } from "@/lib/fallback/data";
 import type { Category } from "./types";
@@ -7,7 +7,7 @@ import type { Category } from "./types";
 export const getCategories = cache(async (): Promise<Category[]> => {
   if (!isSupabaseConfigured) return FALLBACK_CATEGORIES;
   try {
-    const supabase = await createClient();
+    const supabase = createPublicClient();
     const { data } = await supabase
       .from("categories")
       .select("*")

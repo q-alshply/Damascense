@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { createClient } from "@/lib/supabase/server";
+import { createPublicClient } from "@/lib/supabase/public";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { FALLBACK_FOUNDERS, FALLBACK_PAGE_CONTENT } from "@/lib/fallback/data";
 import type { FounderRow } from "@/lib/supabase/types";
@@ -9,7 +9,7 @@ export const getPageContent = cache(
     const fallback = FALLBACK_PAGE_CONTENT[key] ?? {};
     if (!isSupabaseConfigured) return fallback;
     try {
-      const supabase = await createClient();
+      const supabase = createPublicClient();
       const { data } = await supabase
         .from("page_content")
         .select("data")
@@ -25,7 +25,7 @@ export const getPageContent = cache(
 export const getFounders = cache(async (): Promise<FounderRow[]> => {
   if (!isSupabaseConfigured) return FALLBACK_FOUNDERS;
   try {
-    const supabase = await createClient();
+    const supabase = createPublicClient();
     const { data } = await supabase
       .from("founders")
       .select("*")

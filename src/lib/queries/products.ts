@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { createClient } from "@/lib/supabase/server";
+import { createPublicClient } from "@/lib/supabase/public";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import {
   FALLBACK_CATEGORIES,
@@ -74,7 +74,7 @@ export const getProducts = cache(
       return q.limit ? list.slice(0, q.limit) : list;
     }
     try {
-      const supabase = await createClient();
+      const supabase = createPublicClient();
       let query = supabase
         .from("products")
         .select(SELECT)
@@ -97,7 +97,7 @@ export const getProductBySlug = cache(
   async (slug: string): Promise<Product | null> => {
     if (!isSupabaseConfigured) return fallbackProduct(slug)[0] ?? null;
     try {
-      const supabase = await createClient();
+      const supabase = createPublicClient();
       const { data } = await supabase
         .from("products")
         .select(SELECT)
