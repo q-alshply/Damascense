@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "titleTemplate": "%s — Damascense Studio",
+    "defaultTitle": "Damascense Studio — Contemporary Damascene Decor",
+    "defaultDescription": "Decorative mirrors, clocks and wooden objects inspired by Damascene visual heritage. Custom dimensions and finishes. Damascus, Syria."
+  },
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "custom": "Custom Request",
+    "language": "Language",
+    "menu": "Menu",
+    "close": "Close",
+    "skipToContent": "Skip to content"
+  },
+  "cursor": {
+    "view": "View",
+    "explore": "Explore"
+  },
+  "common": {
+    "explore": "Explore",
+    "exploreCollection": "Explore the Collection",
+    "requestCustom": "Request a Custom Piece",
+    "startCustomRequest": "Start a Custom Request",
+    "viewProject": "View Project",
+    "customizeThisPiece": "Customize This Piece",
+    "readMore": "Read more",
+    "back": "Back",
+    "loading": "Loading",
+    "allCategories": "All",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "loadMore": "Load more",
+    "whatsappChat": "Chat on WhatsApp"
+  },
+  "home": {
+    "heroTitle": "Damascus, reinterpreted through contemporary form.",
+    "heroSupport": "Decorative mirrors, clocks and wooden objects inspired by Damascene visual heritage.",
+    "featuredCategoriesEyebrow": "Categories",
+    "featuredCategoriesTitle": "Three ways to bring Damascus home",
+    "selectedWorksEyebrow": "Selected Works",
+    "selectedWorksTitle": "A closer look at the collection",
+    "customEyebrow": "Custom Made",
+    "customTitle": "Every piece, adapted to your space",
+    "customBody": "Every Damascense piece can be adapted through custom dimensions and custom colors or finishes.",
+    "customSteps": {
+      "concept": "Concept",
+      "conceptBody": "We discuss the space, the reference and the intent.",
+      "dimensions": "Dimensions",
+      "dimensionsBody": "Proportions are drawn to fit the wall and the room.",
+      "finish": "Finish",
+      "finishBody": "Wood tone, colour and surface are selected together.",
+      "creation": "Creation",
+      "creationBody": "The piece is made by hand in our Damascus workshop."
+    },
+    "storyEyebrow": "The Studio",
+    "storyTitle": "Founded in Damascus, 2026",
+    "craftEyebrow": "Craft",
+    "craftTitle": "Wood, geometry, reflection, pattern",
+    "craftBody": "Detail carried from the Damascene environment into modern interiors.",
+    "inquiryTitle": "Have a space in mind?",
+    "inquiryBody": "Tell us what you are looking for and leave your WhatsApp number. Our team will contact you to discuss dimensions, colors and details."
+  },
+  "work": {
+    "title": "Work",
+    "intro": "An editorial archive of decorative mirrors, clocks and wooden crafts.",
+    "empty": "No pieces to show yet. Please check back soon.",
+    "filterEmpty": "No pieces match this filter.",
+    "categoryLabel": "Category",
+    "materialLabel": "Material",
+    "dimensionsLabel": "Dimensions"
+  },
+  "category": {
+    "exploreGrid": "Explore the pieces",
+    "ctaTitle": "Looking for something made to measure?",
+    "ctaBody": "Each piece in this category can be produced in custom dimensions and finishes."
+  },
+  "product": {
+    "overview": "Overview",
+    "detailsEyebrow": "Details",
+    "materials": "Materials",
+    "dimensions": "Dimensions",
+    "finish": "Colour / Finish",
+    "customDimensions": "Custom dimensions available",
+    "customColors": "Custom colours available",
+    "category": "Category",
+    "relatedEyebrow": "More from this category",
+    "notFound": "This piece could not be found.",
+    "askWhatsapp": "Ask about this piece on WhatsApp",
+    "whatsappPrefill": "Hello, I am interested in the {name}: {url}"
+  },
+  "about": {
+    "title": "About",
+    "introEyebrow": "Damascense Studio",
+    "philosophyEyebrow": "Philosophy",
+    "philosophyTitle": "The richness of the past, for a new generation",
+    "inspirationEyebrow": "Damascus",
+    "inspirationTitle": "The city as a source",
+    "inspirationBody": "Forms, patterns and decorative elements from the Damascene environment, reinterpreted through a contemporary and refined design language.",
+    "foundersEyebrow": "Founders",
+    "foundersTitle": "Two perspectives, one studio",
+    "founded": "Founded",
+    "foundedValue": "Damascus, 2026",
+    "body": "Damascense Studio was founded in Damascus in 2026 by architect Mahmoud Fattouh and Omar Al Morabet, Regional Manager at Hublot and founder of LiftX Advertising.\n\nBorn from a shared passion for the visual heritage of Damascus, the studio reinterprets forms, patterns and details inspired by the Damascene environment through a contemporary and refined design language.\n\nFrom decorative mirrors and clocks to handcrafted wooden objects, each piece bridges the richness of the past with the aesthetics of modern interiors, carrying Damascene identity into a new generation."
+  },
+  "custom": {
+    "title": "Custom Request",
+    "intro": "Tell us about the piece you have in mind. Leave your WhatsApp number and our team will contact you to discuss dimensions, colours and details.",
+    "fields": {
+      "name": "Full name",
+      "country": "Country",
+      "email": "Email",
+      "whatsapp": "WhatsApp number",
+      "whatsappHint": "Include the international country code, e.g. +963…",
+      "interestedIn": "Interested in",
+      "relatedProduct": "Related piece",
+      "relatedProductNone": "Not related to a specific piece",
+      "dimensions": "Desired dimensions",
+      "dimensionsHint": "In centimetres, e.g. 120 × 80 cm",
+      "finish": "Preferred colour / finish",
+      "message": "Message / project details",
+      "reference": "Reference image",
+      "referenceHint": "Optional. JPG, PNG or WebP up to 8 MB.",
+      "consent": "I agree that Damascense Studio may contact me about this request."
+    },
+    "interestOptions": {
+      "mirror": "Decorative Mirror",
+      "clock": "Decorative Clock",
+      "wooden": "Wooden Craft",
+      "other": "Other"
+    },
+    "submit": "Send request",
+    "submitting": "Sending…",
+    "successTitle": "Thank you. Your request has been received.",
+    "successBody": "Our team will review the details and contact you using the WhatsApp number you provided.",
+    "successReference": "Your reference number",
+    "errorTitle": "Your request could not be sent.",
+    "errorBody": "Please try again in a moment. If the problem continues, email us directly.",
+    "validation": {
+      "name": "Please enter your full name.",
+      "country": "Please enter your country.",
+      "email": "Please enter a valid email address.",
+      "whatsapp": "Please enter a valid WhatsApp number with country code.",
+      "interestedIn": "Please choose what you are interested in.",
+      "message": "Please add a few details about your project.",
+      "consent": "Please accept so we can contact you.",
+      "fileType": "That file type is not supported.",
+      "fileSize": "That image is larger than 8 MB."
+    },
+    "errorRateLimit": "We have already received several requests from you. Our team will be in touch shortly — please wait before sending another."
+  },
+  "footer": {
+    "location": "Damascus, Syria",
+    "rights": "All rights reserved.",
+    "navTitle": "Navigate",
+    "languageTitle": "Language",
+    "socialTitle": "Social"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for has moved or no longer exists.",
+    "cta": "Return home"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "body": "An unexpected error occurred. Please try again.",
+    "retry": "Try again"
+  }
+}

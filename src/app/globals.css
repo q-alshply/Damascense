@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   Damascense Studio — design tokens
+   ───────────────────────────────────────────────────────────── */
+@theme {
+  --color-ink: #080808;
+  --color-ink-900: #0d0d0c;
+  --color-ink-800: #11110f;
+  --color-ink-700: #181714;
+  --color-ivory: #f2efe7;
+  --color-white-soft: #faf9f5;
+  --color-accent: #9a886b;
+  --color-accent-soft: #c9b48f;
+  --color-line: rgba(242, 239, 231, 0.14);
+
+  --font-display: var(--font-display), "Cormorant Garamond", "Times New Roman",
+    serif;
+  --font-display-ar: var(--font-display-ar), "Noto Naskh Arabic", serif;
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-sans-ar: var(--font-sans-ar), "IBM Plex Sans Arabic", sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+
+  --spacing-gutter: clamp(1.25rem, 5vw, 5rem);
+}
+
+:root {
+  --background: var(--color-ink-800);
+  --foreground: var(--color-ivory);
+  color-scheme: dark;
+}
+
+* {
+  min-width: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-synthesis-weight: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-sans-ar);
+}
+
+/* Editorial display type */
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+[dir="rtl"] .font-display {
+  font-family: var(--font-display-ar);
+  letter-spacing: 0;
+}
+
+.eyebrow {
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+[dir="rtl"] .eyebrow {
+  letter-spacing: 0.08em;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-ink);
+}
+
+/* Focus visibility — accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-accent-soft);
+  outline-offset: 3px;
+}
+
+/* Fine 1px hairline utility */
+.hairline {
+  border-color: var(--color-line);
+}
+
+/* Hide native cursor only where the custom cursor is active */
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SVG line-draw helper for the floral motif */
+.draw-path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  pathLength: 1;
+}
