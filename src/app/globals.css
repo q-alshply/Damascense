@@ -95,6 +95,19 @@ body {
   color: var(--color-ink);
 }
 
+/* Native dropdown lists: without this, light text sits on the browser's
+   white popup and options are unreadable. */
+select {
+  color-scheme: dark;
+}
+select option {
+  background-color: var(--color-ink-800);
+  color: var(--color-ivory);
+}
+select option:disabled {
+  color: rgba(242, 239, 231, 0.4);
+}
+
 /* Focus visibility — accessibility */
 :focus-visible {
   outline: 2px solid var(--color-accent-soft);
